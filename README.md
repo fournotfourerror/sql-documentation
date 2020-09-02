@@ -42,7 +42,7 @@
     CREATE DATABASE 'employees'
  ```
  
-**DROPING A DATABASE
+**DROPING A DATABASE**
 ```sql
    DROP DATABASE <db_name>
 ```
@@ -51,4 +51,20 @@ Example
 
 ```sql
     DROP DATABASE 'employees'
+```
+
+**SELECTING A DATABASE**
+```sql
+    USE <db_name>
+```
+
+Example
+```sql
+    USE 'employees'
+```
+
+**CHECKING HOW MANY TABLE AVAILABLE IN DATABASE**
+```sql
+    USE 'employees';
+    SHOW TABLES;
 ```

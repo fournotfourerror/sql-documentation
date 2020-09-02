@@ -88,3 +88,8 @@ Example
     USE employees;
     CREATE TABLE 'users' (name varchar(30),email varchar(100), gender char(1));
 ```
+
+**INSERTING DATA INTO TABLE**
+```sql
+    INSERT INTO users VALUES('Hanuman','hanumankumar@gmail.com','M')
+```

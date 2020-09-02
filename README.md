@@ -68,3 +68,23 @@ Example
     USE 'employees';
     SHOW TABLES;
 ```
+
+#### DATA TYPES
+```sql
+    varchar   (// Varchar takes empty values) (0-255)
+    varchar2  (// It doesn't allow empty values or null values) (0-255)
+    int       (// For numerical values) (-2147483648 to 2147483647)
+    float     (// Decimal values) ( Upto 23 digits)
+    char      (// For representing text) (0-255)
+    BLOB      (// Large amount data (Images)) (0-65535) BLOB - Binary Large OBject
+    LONGBLOB  (// For storing large objects) (0-4294967295)
+    MEDIUMBLOB(// For storing medium sized objects) (0-16777215)
+    CLOB      (// For storing videos)
+    text      (// For storing text) (0-65535)
+```
+
+**CREATING TABLE**
+```sql
+    USE employees;
+    CREATE TABLE 'users' (name varchar(30),email varchar(100), gender char(1));
+```

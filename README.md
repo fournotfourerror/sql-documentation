@@ -31,3 +31,24 @@
   * Examples:
     * Mongo
     * Firebase
+    
+ **CREATING A DATABASE**
+ ```sql
+     CREATE DATABASE <db_name>;
+ ```
+ 
+ Example
+ ```sql
+    CREATE DATABASE 'employees'
+ ```
+ 
+**DROPING A DATABASE
+```sql
+   DROP DATABASE <db_name>
+```
+
+Example
+
+```sql
+    DROP DATABASE 'employees'
+```

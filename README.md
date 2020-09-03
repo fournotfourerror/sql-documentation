@@ -134,9 +134,16 @@ By using this keyword we can reduce the data redundancy while retrieving informa
     SELECT 30+5
 ```
 
-* Logical
+* Logical (Logical operators are used for conditional retrieving of the data)
  * AND
  * OR
  * NOT
+ ```sql
+     SELECT * FROM users WHERE name='Hanuman' AND email='hanumanhkumar@gmail.com'
+     
+     SELECT * FROM users WHERE name='Hanuman' OR email='hanumankumar@gmail.com'
+     
+     SELECT * FROM users WHERE NOT name='Hanuman'
+ ```
 * Comparision operators
  * =, !=, <>, < ,>,<=, >=

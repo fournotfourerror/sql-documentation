@@ -120,6 +120,14 @@ Example
       SELECT email FROM users WHERE name='Hanuman';
 ```
 
+**DISTINCT**
+
+By using this keyword we can reduce the data redundancy while retrieving information from tables.
+
+```sql
+    SELECT DISTINCT name FROM users
+```
+
 **Operators in SQL**
 * Arithmatic operators (+,-,*,/,%)
 ```sql

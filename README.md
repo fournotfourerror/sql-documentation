@@ -93,3 +93,15 @@ Example
 ```sql
     INSERT INTO users VALUES('Hanuman','hanumankumar@gmail.com','M')
 ```
+
+**Operators in SQL**
+* Arithmatic operators (+,-,*,/,%)
+```sql
+    SELECT 30+5
+```
+* Logical
+ * AND
+ * OR
+ * NOT
+* Comparision operators
+ * =, !=, <>, < ,>,<=, >=

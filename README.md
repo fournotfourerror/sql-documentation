@@ -92,6 +92,8 @@ Example
 **INSERTING DATA INTO TABLE**
 ```sql
     INSERT INTO users VALUES('Hanuman','hanumankumar@gmail.com','M')
+    
+    INSERT INTO users(name, gender) VALUES('Kalyan','M')
 ```
 
 **RETRIEVING DATA FROM TABLE**

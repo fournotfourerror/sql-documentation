@@ -111,6 +111,7 @@ Example
 ```sql
     SELECT 30+5
 ```
+
 * Logical
  * AND
  * OR

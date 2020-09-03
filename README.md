@@ -106,6 +106,18 @@ Example
     SELECT email FROM users
 ```
 
+**WHERE Clause**
+
+By using `WHERE` clause we can retrieve data based on a condition
+
+Example
+
+```sql
+      SELECT * FROM users WHERE name='Hanuman';
+      
+      SELECT email FROM users WHERE name='Hanuman';
+```
+
 **Operators in SQL**
 * Arithmatic operators (+,-,*,/,%)
 ```sql

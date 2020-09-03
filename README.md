@@ -94,6 +94,18 @@ Example
     INSERT INTO users VALUES('Hanuman','hanumankumar@gmail.com','M')
 ```
 
+**RETRIEVING DATA FROM TABLE**
+
+```sql
+    SELECT * FROM <table_name>
+    
+    SELECT * FROM users
+    
+    SELECT name FROM users
+    
+    SELECT email FROM users
+```
+
 **Operators in SQL**
 * Arithmatic operators (+,-,*,/,%)
 ```sql

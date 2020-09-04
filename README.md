@@ -128,6 +128,25 @@ By using this keyword we can reduce the data redundancy while retrieving informa
     SELECT DISTINCT name FROM users
 ```
 
+**COUNT**
+* COUNT(*)
+
+  This is for checking no.of rows avaulable in the table.
+  
+  Example 
+  
+  ```sql
+      SELECT COUNT(*) FROM users;
+  ```
+  
+* COUNT(_filed_name_)
+
+  This is for counting number of rows available in a specific field. It counts all the data excepts the empty or NULL values.
+  
+  ```sql
+     SELECT COUNT(email) FROM users;
+  ```
+
 **Operators in SQL**
 * Arithmatic operators (+,-,*,/,%)
 ```sql
@@ -135,6 +154,7 @@ By using this keyword we can reduce the data redundancy while retrieving informa
 ```
 
 * Logical (Logical operators are used for conditional retrieving of the data)
+
  * AND
  * OR
  * NOT

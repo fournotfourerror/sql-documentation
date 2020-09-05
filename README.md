@@ -205,6 +205,12 @@ This language consists of various keywords. These are used to manipulate the str
      //Adding a new column
      ALTER TABLE workers ADD dob varchar(30)
      
-     // Here **ADD** is the keyword to add a new column and **dob** is the column name
+     // Here ADD is the keyword to add a new column and dob is the column name
+     
+     //Changing the column name of a table(workers)
+     ALTER TABLE workers CHANGE dob Date_of_birth varchar(30)
+     
+     //Dropping a column from a table
+     ALTER TABLE workers DROP COLUMN Date_of_birth;
 ```
 * TRUNCATE

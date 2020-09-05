@@ -191,3 +191,14 @@ By using this keyword we can reduce the data redundancy while retrieving informa
 ```sql
     SELECT MAX(salary) FROM workers WHERE salary<(SELECT MAX(salary) FROM workers WHERE salary < (SELECT MAX(salary) FROM workers))
 ```
+
+#### DATA DEFINITION LANGUAGE
+This language consists of various keywords. These are used to manipulate the structure of a table. When we're gonna apply the commands, the structure of table will be changed.
+
+* CREATE
+* DROP
+```sql
+     DROP TABLE employees
+```
+* ALTER
+* TRUNCATE

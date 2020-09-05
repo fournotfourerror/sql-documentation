@@ -186,3 +186,8 @@ By using this keyword we can reduce the data redundancy while retrieving informa
 ```sql
      SELECT MAX(salary) FROM workers WHERE salary < (SELECT MAX(salary) FROM workers)
 ```
+**FINDING 3rd LARGEST SALARY**
+
+```sql
+    SELECT MAX(salary) FROM workers WHERE salary<(SELECT MAX(salary) FROM workers WHERE salary < (SELECT MAX(salary) FROM workers))
+```

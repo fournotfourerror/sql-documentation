@@ -182,3 +182,7 @@ By using this keyword we can reduce the data redundancy while retrieving informa
         SELECT COUNT(email) FROM users;
   ```
 
+**FINDING 2nd LARGEST SALARY**
+```sql
+     SELECT MAX(salary) FROM workers WHERE salary < (SELECT MAX(salary) FROM workers)
+```

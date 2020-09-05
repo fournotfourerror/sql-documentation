@@ -201,4 +201,10 @@ This language consists of various keywords. These are used to manipulate the str
      DROP TABLE employees
 ```
 * ALTER
+```sql
+     //Adding a new column
+     ALTER TABLE workers ADD dob varchar(30)
+     
+     // Here **ADD** is the keyword to add a new column and **dob** is the column name
+```
 * TRUNCATE

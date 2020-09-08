@@ -192,7 +192,7 @@ By using this keyword we can reduce the data redundancy while retrieving informa
     SELECT MAX(salary) FROM workers WHERE salary<(SELECT MAX(salary) FROM workers WHERE salary < (SELECT MAX(salary) FROM workers))
 ```
 
-#### DATA DEFINITION LANGUAGE
+#### DATA DEFINITION LANGUAGE (_DDL_)
 This language consists of various keywords. These are used to manipulate the structure of a table. When we're gonna apply the commands, the structure of table will be changed.
 
 * CREATE
@@ -214,3 +214,27 @@ This language consists of various keywords. These are used to manipulate the str
      ALTER TABLE workers DROP COLUMN Date_of_birth;
 ```
 * TRUNCATE
+
+#### DATA MANIPULATION LANGUAGE (_DML_)
+The commands have ability to change the data inside the table called Data manipulation language commands.
+
+The following are the commands for DML
+ * INSERT
+ 
+```sql
+    INSERT INTO users VALUES('Hanuman','hanumankumar@gmail.com','M')
+    
+    INSERT INTO users(name, gender) VALUES('Kalyan','M')
+```
+ * DELETE
+ 
+```sql
+    DELETE FROM users WHERE email IS NULL;
+    
+    DELETE FROM users WHERE gender="F";
+```
+
+ * UPDATE
+```sql
+    UPDATE users SET name="Hanuman Kumar" WHERE name="Hanuman";
+```

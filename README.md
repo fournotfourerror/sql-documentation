@@ -238,3 +238,25 @@ The following are the commands for DML
 ```sql
     UPDATE users SET name="Hanuman Kumar" WHERE name="Hanuman";
 ```
+#### Data Control Language (_DCL_)
+ * GRANT
+   * Giving permissions to specific user(s)
+ * REVOKE
+   * Withdrawing the permissions which were given using `GRANT` command
+   
+#### Transaction Control Language (_TCL_)
+ * COMMIT
+ * ROLLBACK
+ * SAVEPOINT
+ 
+ #### Key constraints in SQL
+ Key constraint is like a rule in Data Base Management System, that governs what kind of data should be inserted in a table
+ 
+ * Primary
+   * The data shouldn't be a NULL and it should be a unique value.
+   * A table should contain only one primary key
+```sql
+      CREATE TABLE persons(id int NOT NULL PRIMARY KEY, name varchar(20), salary int);
+```
+ * Foriegn
+ * Unique

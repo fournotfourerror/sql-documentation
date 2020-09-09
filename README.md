@@ -264,5 +264,12 @@ The following are the commands for DML
 ```sql
      ALTER TABLE persons ADD id int PRIMARY KEY AUTO_INCREMENT;
 ```
- * Foriegn
+ * FOREIGN
+   * `FOREIGN KEY` is used to link two tables together
+   * If a table contains `FOREIGN KEY`, it will be treated as a child table.
+   * The field of table having `FOREIGN KEY` is refers to the `PRIMARY KEY` of another table
+   
+```sql
+     CREATE TABLE persons_hike (id int, hike int, FOREIGN KEY(id) REFERRENCES persons(id) ON DELETE CASCADE)
+```
  * Unique

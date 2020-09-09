@@ -258,5 +258,11 @@ The following are the commands for DML
 ```sql
       CREATE TABLE persons(id int NOT NULL PRIMARY KEY, name varchar(20), salary int);
 ```
+   * Auto increment with primary key
+     * By using this we can insert data without mentioning it. And the data in the specific field will be incremented automatically by 1
+     
+```sql
+     ALTER TABLE persons ADD id int PRIMARY KEY AUTO_INCREMENT;
+```
  * Foriegn
  * Unique

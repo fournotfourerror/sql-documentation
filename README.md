@@ -308,4 +308,7 @@ The following are the commands for DML
     
     USE polytechnic;
     SELECT emp_name FROM sales WHERE(emp_job="salesman" or emp_job="clerk" or emp_job="analyst") and emp_salary>3000;
+    
+    USE polytechnic;
+    SELECT emp_name FROM sales WHERE emp_job in('clerk','salesman','analyst') and emp_salary>3000;
 ```

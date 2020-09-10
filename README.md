@@ -286,3 +286,26 @@ The following are the commands for DML
 ```sql
     CREATE TABLE employees (emp_id int UNIQUE AUTO_INCREMENT, emp_name varchar(20),emp_email varchar(50) UNIQUE)
 ```
+
+#### TASKS
+ 1. Create a table (sales) with the fields (emp_name,emp_job,emp_email,emp_salary). 
+  * The emp_email Should be unique and should not allow the null values. 
+  * Display the names of employees who are working as clerk, salesman or analyst and drawing a salary more than 3000.
+  
+```sql
+    USE polytechnic;
+    
+    CREATE TABLE sales (emp_name varchar(20),emp_job varchar(20),emp_email varchar(50) PRIMARY    KEY,emp_salary int);
+    
+    // Inserting data
+    USE polytechnic;
+    INSERT INTO sales VALUES("John","clerk","john@gmail.com",5000);
+    INSERT INTO sales VALUES("Jack","analyst","jack@gmail.com",2000);
+    INSERT INTO sales VALUES("Tom","salesman","tom@gmail.com",3000);
+    INSERT INTO sales VALUES("Smith","clerk","smith@gmail.com",3500);
+    INSERT INTO sales VALUES("Ninad","salesman","ninad@gmail.com",2600);
+    
+    
+    USE polytechnic;
+    SELECT emp_name FROM sales WHERE(emp_job="salesman" or emp_job="clerk" or emp_job="analyst") and emp_salary>3000;
+```

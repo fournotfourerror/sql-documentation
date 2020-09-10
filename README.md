@@ -252,7 +252,13 @@ The following are the commands for DML
  #### Key constraints in SQL
  Key constraint is like a rule in Data Base Management System, that governs what kind of data should be inserted in a table
  
- * Primary
+ * NOT NULL
+  * The data shouldn't be a null value.
+```sql
+    CREATE TABLE workers (name varchar(20), email varchar(50) NOT NULL);
+```
+ 
+ * PRIMARY
    * The data shouldn't be a NULL and it should be a unique value.
    * A table should contain only one primary key
 ```sql
@@ -272,4 +278,11 @@ The following are the commands for DML
 ```sql
      CREATE TABLE persons_hike (id int, hike int, FOREIGN KEY(id) REFERRENCES persons(id) ON DELETE CASCADE)
 ```
- * Unique
+ * UNIQUE
+   * We've a limitation of using a primary key. i,e We can use only one primary key per a table. When we gonna use multiple primary keys, we will get errors because the primary rule for primary key is to maintain one primary key per table.
+   * To overcome this disadvantage we can use another key constraint concept. i,e : `UNIQUE` key.
+   * `UNIQUE` key is having same kind of rules as primary key have. But we can use multiple `UNIQUE KEYS` per a table.
+   
+```sql
+    CREATE TABLE employees (emp_id int UNIQUE AUTO_INCREMENT, emp_name varchar(20),emp_email varchar(50) UNIQUE)
+```

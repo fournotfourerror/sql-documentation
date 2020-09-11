@@ -312,3 +312,11 @@ The following are the commands for DML
     USE polytechnic;
     SELECT emp_name FROM sales WHERE emp_job in('clerk','salesman','analyst') and emp_salary>3000;
 ```
+
+#### Wildcards
+We have to use the concept of `wildcards` for implementing pattern matching functionality. We can implement this by using `LIKE` keyword.
+
+* **%** => It takes multiple characters for pattern matching
+ * a% => The data must and should starts with the character `a`
+ * %a => The data must and should ends with the character `a`
+ * %a% => The data must and should contains the character of `a` in it.

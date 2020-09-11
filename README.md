@@ -328,3 +328,14 @@ We have to use the concept of `wildcards` for implementing pattern matching func
    
    SELECT * FROM users WHERE name LIKE "%a%"
 ```
+
+* Underscore (`_`)
+  This wildcard is used for matching a specific range of characters.
+  * _ => Matching with single character
+  * _ _ => Matching with two characters
+
+```sql
+   `// The data which we are going to select must and should have the character a in second position`
+   SELECT * FROM users WHERE name LIKE "_a%";
+  
+```

@@ -320,3 +320,11 @@ We have to use the concept of `wildcards` for implementing pattern matching func
  * a% => The data must and should starts with the character `a`
  * %a => The data must and should ends with the character `a`
  * %a% => The data must and should contains the character of `a` in it.
+ 
+```sql
+   SELECT * FROM users WHERE name LIKE "a%";
+   
+   SELECT * FROM users WHERE name LIKE "%a"
+   
+   SELECT * FROM users WHERE name LIKE "%a%"
+```

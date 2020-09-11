@@ -335,7 +335,13 @@ We have to use the concept of `wildcards` for implementing pattern matching func
   * _ _ => Matching with two characters
 
 ```sql
-   `// The data which we are going to select must and should have the character a in second position`
+   // The data which we are going to select must and should have the character a in second position
    SELECT * FROM users WHERE name LIKE "_a%";
+   
+   // The data which we are gonna retrive should contain 6 characters long and should contain H as the first character.
+   SELECT * FROM users WHERE name LIKE "H_ _ _ _ _"
+   
+   // The data which we are gonna select should have atleast 6 characters long.
+   SELECT * FROM users WHERE name LIKE "H_ _ _ _ _ %"
   
 ```

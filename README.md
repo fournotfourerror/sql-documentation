@@ -345,3 +345,30 @@ We have to use the concept of `wildcards` for implementing pattern matching func
    SELECT * FROM users WHERE name LIKE "H_ _ _ _ _ %"
   
 ```
+#### Relationships
+* One-to-one
+* One-to-many
+* Many-to-many
+
+#### Joins
+A join is used to combine multiple tables together. By using this we can combine the data exists in rows of the tables.
+
+* INNER JOIN
+
+```sql
+    SELECT student_info.student_id, student_info.name, certifications.certification FROM certifications INNER JOIN student_info ON student_info.student_id=certifications.student_id;
+```
+
+* LEFT JOIN
+
+```sql
+    SELECT student_info.student_id,student_info.name,certifications.certification FROM student_info LEFT JOIN certifications ON student_info.student_id=certifications.student_id
+```
+
+* RIGHT JOIN
+
+```sql
+    SELECT student_info.student_id, student_info.name, certifications.certification FROM student_info RIGHT JOIN certifications ON student_info.student_id=certifications.student_id
+
+```
+* FULL JOIN

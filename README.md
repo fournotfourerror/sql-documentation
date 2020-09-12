@@ -372,3 +372,6 @@ A join is used to combine multiple tables together. By using this we can combine
 
 ```
 * FULL JOIN
+```sql
+    SELECT * FROM student_info LEFT JOIN certifications ON student_info.student_id=certifications.student_id UNION SELECT * FROM student_info RIGHT JOIN certifications ON student_info.student_id=certifications.student_id
+```

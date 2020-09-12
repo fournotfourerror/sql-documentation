@@ -375,3 +375,12 @@ A join is used to combine multiple tables together. By using this we can combine
 ```sql
     SELECT * FROM student_info LEFT JOIN certifications ON student_info.student_id=certifications.student_id UNION SELECT * FROM student_info RIGHT JOIN certifications ON student_info.student_id=certifications.student_id
 ```
+
+#### ORDER BY
+```sql
+    // For retrieving data in descending order
+    SELECT * FROM student_info ORDER BY student_id DESC;
+    
+    // For retrieving data in ascending order
+    SELECT * FROM student_info ORDER BY student_id ASC;
+```

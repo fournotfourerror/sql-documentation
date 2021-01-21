@@ -1,5 +1,73 @@
 # sql-documentation
 
+## Node JS
+### node with mysql
+Installing mysql
+
+`npm install mysql`
+
+#### COnnecting with mysql
+
+```javascript
+	var mysql = require('mysql');
+
+	// mysql connection
+	var connection=mysql.createConnection({
+		host:"localhost",
+		user:"root",
+		password:""
+	});
+	
+	connection.connect(err=>{
+		if err throw err
+		console.log("Connected to mysql");
+	})
+```
+
+#### Creating a database
+```javascript
+	connection.connect(err=>{
+	if (err) throw err;
+	console.log("Connected to mysql");
+	connection.query("CREATE DATABASE node-info", (err,result)=>{
+		if(err) throw err;
+		console.log(result);
+		})
+	})
+```
+
+#### Creating a table
+```javascript
+	var connection=mysql.createConnection({
+		host:"localhost",
+		user:"root",
+		password:"",
+		**database**:"node_info"
+	});
+
+	connection.connect(err=>{
+		if (err) throw err;
+		console.log("Connected to mysql");
+		connection.query("CREATE TABLE employee (name varchar(20), emaild varchar(50), mobile varchar(20))", 			(err,result)=>{
+			if(err) throw err;
+			console.log("Table created");
+		})
+	})
+```
+
+#### Inserting Data
+```javascript
+	connection.connect(err=>{
+	if (err) throw err;
+	console.log("Connected to mysql");
+	connection.query("INSERT INTO employee (name,emaild,mobile) VALUES ('Hemanth','hemanth@gmail.com','9888786858')", 		(err,result)=>{
+		if(err) throw err;
+		console.log("Table created");
+		})
+	})
+```
+
+
 ### Data base:  `A storage area to store Collection of information`
 * FMS (File management system)
   * AFMS is a type of software that manages data files in a computer system. It has limited capabilities and designed to manage individual or group of files.
